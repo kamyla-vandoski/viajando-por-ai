@@ -1,0 +1,234 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #263238;
+    background-color: #f4f8f7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #00695c,
+        #00897b
+    );
+
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    background-color: #004d40;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: #00796b;
+}
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+article,
+aside {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #00695c;
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0 20px;
+}
+
+/* =========================
+   LISTAS
+========================= */
+
+ul,
+ol {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   CITAÇÃO
+========================= */
+
+blockquote {
+    border-left: 5px solid #ffb300;
+    background-color: #fff8e1;
+    padding: 20px;
+    margin: 25px 0;
+    font-style: italic;
+    color: #5d4037;
+}
+
+/* =========================
+   ASIDE
+========================= */
+
+aside h2 {
+    font-size: 1.5rem;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+.destaque {
+    background-color: #e0f2f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 25px;
+    border-left: 4px solid #00897b;
+}
+
+.destaque strong {
+    color: #00695c;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 45px 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li a {
+        padding: 10px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    article,
+    aside {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
