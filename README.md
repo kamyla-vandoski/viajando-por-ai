@@ -36,8 +36,7 @@ pagina-informativa-viagens/ │ ├── index.html ├── style.css ├─�
 
 A versão publicada do projeto estará disponível em:
 
-https://SEU-USUARIO.github.io/pagina-informativa-viagens/
-
+https://github.com/kamyla-vandoski
 ## 📄 Licença
 
 Este projeto está disponível sob a licença MIT.# viajando-por-ai
